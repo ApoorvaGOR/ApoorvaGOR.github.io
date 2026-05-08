@@ -2,108 +2,197 @@
 <html>
 <head>
     <title>Apoorva Narula</title>
+
     <style>
+
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 40px;
-            line-height: 1.6;
+            line-height: 1.7;
             background-color: #f8f9fa;
             color: #222;
         }
 
         h1 {
             color: #003366;
+            font-size: 48px;
+            margin-bottom: 10px;
         }
 
         h2 {
-            margin-top: 40px;
+            margin-top: 10px;
             color: #00509e;
+            font-size: 32px;
+        }
+
+        h3 {
+            color: #222;
+            margin-top: 25px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .profile-image {
+            width: 280px;
+            border-radius: 18px;
+            box-shadow: 0px 4px 14px rgba(0,0,0,0.2);
         }
 
         .card {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 14px;
+            margin-top: 30px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
         }
 
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-top: 15px;
+        .project-images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .project-images img {
+            width: 48%;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
         }
 
         a {
             color: #00509e;
             text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
         }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
     </style>
+
 </head>
 
 <body>
 
-    <h1>Apoorva Narula</h1>
+    <div class="hero">
 
-    <p>
-        PhD student at the Georgia Institute of Technology working on
-        statistical applications of global optimization.
-    </p>
+        <div class="hero-text">
+
+            <h1>Apoorva Narula</h1>
+
+            <p style="font-size:20px;">
+                PhD student at the Georgia Institute of Technology
+                working on statistical applications of global optimization,
+                scalable mixed integer programming, and statistical learning.
+            </p>
+
+        </div>
+
+        <img src="Apoorva_Profile_Picture.JPG"
+             alt="Apoorva Narula"
+             class="profile-image">
+
+    </div>
 
     <div class="card">
+
         <h2>Research Interests</h2>
+
         <ul>
             <li>Scalable Mixed Integer Programming</li>
             <li>Change-point Detection</li>
             <li>Trend Filtering</li>
+            <li>Statistical Learning</li>
+            <li>Optimization under Uncertainty</li>
         </ul>
+
     </div>
 
     <div class="card">
+
         <h2>Projects</h2>
 
-        <h3>Mixed Integer Programming for Change-point Detection</h3>
+        <h3>
+            Mixed Integer Programming for Change-point Detection
+        </h3>
 
         <p>
-            Joint work with Santanu S. Dey and Yao Xie.
+            Joint work with
+            <strong>Santanu S. Dey</strong>
+            and
+            <strong>Yao Xie</strong>.
+        </p>
+
+        <p>
+            This work develops scalable mixed integer optimization
+            formulations for statistical change-point detection and
+            trend filtering problems.
         </p>
 
         <p>
             <a href="https://arxiv.org/pdf/2602.11947" target="_blank">
-                Read the arXiv paper
+                Read the arXiv Paper
             </a>
         </p>
 
-        <img src="change_point_detection.png" alt="Change-point detection project visualization">
+        <div class="project-images">
+
+            <img src="Sparse_Change_point_Detection.png"
+                 alt="Sparse Change-point Detection">
+
+            <img src="Univariate_with_Continuity.png"
+                 alt="Univariate Change-point Detection">
+
+        </div>
+
     </div>
 
     <div class="card">
+
         <h2>Education</h2>
 
         <h3>Current</h3>
+
         <p>
-            Georgia Institute of Technology<br>
-            PhD in Industrial Engineering, 2024 onwards<br>
+            <strong>Georgia Institute of Technology</strong><br>
+            PhD in Industrial Engineering (2024 onwards)<br>
             H. Milton Stewart School of Industrial and Systems Engineering
         </p>
 
         <h3>Completed</h3>
+
         <p>
-            IIT Delhi<br>
+            <strong>IIT Delhi</strong><br>
             B.Tech. in Production & Industrial Engineering<br>
             Institute Silver Medal
         </p>
 
         <p>
-            IIT Delhi<br>
+            <strong>IIT Delhi</strong><br>
             M.Tech. in Industrial Engineering
         </p>
+
     </div>
 
 </body>
