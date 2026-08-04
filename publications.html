@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Publications | Apoorva Narula</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,9 +15,9 @@
         <a href="biography.html">Biography</a>
         <a href="publications.html">Publications</a>
         <a href="code.html">Code</a>
-        <a href="teaching-service.html">Teaching & Service</a>
+        <a href="teaching-service.html">Teaching &amp; Service</a>
         <a href="gallery.html">Gallery</a>
-        <a href="cv-contact.html">CV & Contact</a>
+        <a href="cv-contact.html">CV &amp; Contact</a>
     </nav>
 
     <div class="card">
@@ -22,39 +25,77 @@
 
         <p>
             A complete and up-to-date list of my publications is available on
-            <a href="https://scholar.google.com/citations?hl=en&user=cupIUlIAAAAJ" target="_blank">
+            <a href="https://scholar.google.com/citations?hl=en&user=cupIUlIAAAAJ"
+               target="_blank"
+               rel="noopener noreferrer">
                 Google Scholar
             </a>.
         </p>
 
-        <h3>Mixed Integer Programming for Change-point Detection</h3>
+        <article class="publication">
+            <h3>Mixed-Integer Programming for Change-Point Detection</h3>
 
-        <p>
-            February, 2026
-        </p>
+            <p class="publication-date">
+                February 2026
+            </p>
 
-        <p>
-            Apoorva Narula, Santanu S. Dey, and Yao Xie.
-        </p>
+            <p class="publication-authors">
+                <strong>Apoorva Narula</strong>, Santanu S. Dey, and Yao Xie
+            </p>
 
-        <p>
-            Abstract: We present a new mixed-integer programming (MIP) approach for offline multiple change-point detection by casting the problem as a globally optimal piecewise linear (PWL) fitting problem.  Our main contribution is a family of strengthened MIP formulations whose linear programming (LP) relaxations admit integral projections onto the segment assignment variables, which encode the segment membership of each data point.
-            This property yields provably tighter relaxations than existing formulations for offline multiple change-point detection. We further extend the framework to multidimensional PWL models with shared change-points. Extensive computational experiments on benchmark real-world datasets demonstrate that the proposed formulations achieve reductions in solution times under both L-1 and L-2 loss functions in comparison to the state-of-the-art.
-        </p>
+            <details class="abstract-dropdown">
+                <summary>View Abstract</summary>
 
-        <p>
-            <a href="https://arxiv.org/pdf/2602.11947" target="_blank">
-                Read the arXiv Paper
-            </a>
-        </p>
+                <p>
+                    We present a new mixed-integer programming (MIP) approach
+                    for offline multiple change-point detection by casting the
+                    problem as a globally optimal piecewise-linear (PWL)
+                    fitting problem. Our main contribution is a family of
+                    strengthened MIP formulations whose linear programming
+                    (LP) relaxations admit integral projections onto the
+                    segment-assignment variables, which encode the segment
+                    membership of each data point.
+                </p>
 
-        <div class="project-images">
-            <img src="Sparse_Change_point_Detection.JPG"
-                 alt="Sparse Change-point Detection">
+                <p>
+                    This property yields provably tighter relaxations than
+                    existing formulations for offline multiple change-point
+                    detection. We further extend the framework to
+                    multidimensional PWL models with shared change-points.
+                    Extensive computational experiments on benchmark
+                    real-world datasets demonstrate that the proposed
+                    formulations reduce solution times under both
+                    ℓ<sub>1</sub> and ℓ<sub>2</sub> loss functions compared
+                    with the state of the art.
+                </p>
+            </details>
 
-            <img src="Univariate_with_Continuity.JPG"
-                 alt="Univariate Change-point Detection">
-        </div>
+            <div class="publication-links">
+                <a class="publication-button"
+                   href="https://arxiv.org/pdf/2602.11947"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Read Paper
+                </a>
+
+                <a class="publication-button"
+                   href="https://github.com/ApoorvaGOR/MIP_for_Change_point_Detection"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Code
+                </a>
+            </div>
+
+            <div class="project-images">
+                <img src="Sparse_Change_point_Detection.JPG"
+                     alt="Sparse change-point detection results"
+                     loading="lazy">
+
+                <img src="Univariate_with_Continuity.JPG"
+                     alt="Univariate change-point detection with continuity"
+                     loading="lazy">
+            </div>
+        </article>
     </div>
 
 </body>
